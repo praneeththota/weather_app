@@ -1,2 +1,13 @@
-<h1>Forecast#show</h1>
-<p>Find me in app/views/forecast/show.html.erb</p>
+<h2>Weather Forecast</h2>
+
+<p>Current Temperature: <%= @forecast[:temperature] %> °C</p>
+<p>High: <%= @forecast[:high] %> °C</p>
+<p>Low: <%= @forecast[:low] %> °C</p>
+
+<% if @from_cache %>
+  <p style="color: green;">(Result retrieved from cache)</p>
+<% else %>
+  <p style="color: blue;">(Live API result)</p>
+<% end %>
+
+<%= link_to "Search again", root_path %>

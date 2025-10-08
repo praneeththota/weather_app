@@ -1,2 +1,11 @@
-<h1>Forecast#new</h1>
-<p>Find me in app/views/forecast/new.html.erb</p>
+<h2>Weather Forecast</h2>
+
+<%= form_with url: forecast_path, method: :get, local: true do %>
+  <label>Enter Address:</label>
+  <%= text_field_tag :address, params[:address], placeholder: "e.g. New York, NY" %>
+  <%= submit_tag "Get Forecast" %>
+<% end %>
+
+<% if flash[:alert] %>
+  <p style="color:red;"><%= flash[:alert] %></p>
+<% end %>
