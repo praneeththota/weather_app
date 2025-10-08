@@ -16,9 +16,12 @@
 body {
   background-color: #FAF9F6;
 }
-.green {
-  color: green;
+.text-green {
+  color: #16a34a;
 }
-.blue {
-  color: blue;
+.text-blue {
+  color: #2563eb;
+}
+.text-red {
+  color: #f00000;
 }

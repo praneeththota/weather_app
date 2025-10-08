@@ -5,9 +5,9 @@
 <p>Low: <%= @forecast[:low] %> °C</p>
 
 <% if @from_cache %>
-  <p class = "green">(Result retrieved from cache)</p>
+  <p class = "text-green">(Result retrieved from cache)</p>
 <% else %>
-  <p class = "blue">(Live API result)</p>
+  <p class = "text-blue">(Live API result)</p>
 <% end %>
 
 <%= link_to "Search again", root_path %>
