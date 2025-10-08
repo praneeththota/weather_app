@@ -21,7 +21,8 @@ gem "jbuilder"
 
 gem "httparty"
 gem "byebug"
-
+gem "rspec-rails"
+gem "webmock"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
